@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style>
+        .img {
+            text-align: center;
+            padding-top: 100PX;
+
+        }
+
+        .main {
+            display: grid;
+            grid-template-areas: 'header header header''about myedu skill'' project project skill ';
+            grid-gap: 1rem;
+            margin-left: 10%;
+            margin-right: 10%;
+            margin-top: 20px;
+            margin-bottom: 10%;
+            
+        }
+
+        .about {
+            grid-area: about;
+            /* border: 2px solid black; */
+            padding: 10px;
+            border-radius: 5px;
+            background-color: whitesmoke;
+
+        }
+
+        .myedu {
+            grid-area: myedu;
+            /* border: 2px solid black; */
+            padding: 10px;
+            border-radius: 5px;
+            background-color: whitesmoke;
+            overflow: scroll;
+            overflow-x: hidden;
+            height: 300px;
+
+        }
+
+        .myskill {
+            grid-area: skill;
+            /* border: 2px solid black; */
+            padding: 10px;
+            border-radius: 5px;
+            background-color: whitesmoke;
+
+        }
+
+        .project {
+            grid-area: project;
+            /* border: 2px solid black; */
+            padding: 10px;
+            border-radius: 5px;
+            background-color: whitesmoke;
+            height: 300px;
+            overflow: scroll;
+            overflow-x: hidden;
+
+        }
+
+        .header {
+            grid-area: header;
+            /* border: 2px solid black; */
+            padding: 10px;
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-columns: 2fr 1fr;
+            border-radius: 5px;
+            background-color: whitesmoke;
+
+        }
+
+        .follow i {
+            padding: 10px;
+            font-size: 35px;
+        }
+
+        .hello {
+            padding: 10px;
+            border-right: 5px solid black;
+        }
+        .myskill i{
+            padding-left: 10px;
+            font-size: 15px;
+        }
+        .myskill li{
+            padding: 10px;
+        }
+
+
+        @media (max-width: 800px) {
+            .main {
+                margin-left: 0px;
+                margin-right: 0px;
+                display: block;
+                gap: 10px;
+            }
+
+            div.header {
+                grid-template-columns: 1fr;
+            }
+
+            div.hello {
+                border-right: none;
+                border-bottom: 5px solid black;
+            }
+
+            .about {
+                margin-top: 20px;
+            }
+
+            .myskill {
+                margin-top: 20px;
+            }
+
+            .myedu {
+                margin-top: 20px;
+            }
+
+            .project {
+                margin-top: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="background">
+        <div class="img">
+            <img src="profile.png" alt="profileimg" style="height: 90px; width: 90px; border-radius: 50px;">
+            <h1>OJUS SONI</h1>
+            <p><B>PROGRAMMER||WEB DEVELOPER</B></p>
+        </div>
+        <div class="main">
+            <div class="header">
+                <div class="hello">
+                    <h2>ABOUT MYSELF</h2>
+                    <p><B>HELLO GUY'S</B> I AM <b>OJUS SONI</b></p>
+                    <p> Currently student, B-TECH in computer science </p>
+                    <p>Learning is in my blood and applying it is in my mind.
+                        my goal is to make world easy with programming</p>
+                </div>
+                <div class="follow">
+                    <h2>FOLLOW ME ON</h2>
+                    <i class="fab fa-facebook-square"></i>
+                    <i class="fab fa-instagram-square"></i>
+                    <i class="fab fa-linkedin"></i>
+                    <i class="fab fa-github-square"></i>
+                </div>
+            </div>
+            <div class="about">
+                <h2>MY EDUCATION</h2>
+                <p>1st year student at <a href="">ssipmt, raipur</a></p>
+                <p>october 2020 to present</p>
+                <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, facilis?</p> -->
+            </div>
+            <div class="myedu">
+                <h2>MY CERTIFICATE'S</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima, in.</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima, in.</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima, in.</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima, in.</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima, in.</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima, in.</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima, in.</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima, in.</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima, in.</p>
+            </div>
+            <div class="myskill">
+                <h2>my skill</h2>
+               <h3>programming</h3>
+               <li class="pro"><B>PYTHON</B><i class="fab fa-python"></i></li>
+               <li class="pro"><B>JAVA</B><i class="fab fa-java"></i></li>
+               <li class="pro"><B>JAVASCRIPT</B><i class="fab fa-js-square"></i></li>
+               <h3>WEB DEVELOPMENT</h3>
+               <li><b>HTML5</b><i class="fab fa-html5"></i></li>
+               <li><b>CSS3</b><i class="fab fa-css3-alt"></i></li>
+               <li><b>NODE.JS</b><i class="fab fa-node"></i></li>
+               <li><b>BOOTSTRAP</b><i class="fab fa-bootstrap"></i></li>
+               <li><b>WORDPRESS</b><i class="fab fa-wordpress"></i></li>
+            </div>
+            <div class="project">
+                <h2>MY PROJECT'S</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, necessitatibus.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, necessitatibus.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, necessitatibus.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, necessitatibus.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, necessitatibus.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, necessitatibus.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
