@@ -1,0 +1,201 @@
+
+*{
+    margin: 0px 0px ;
+    padding: 0px 0px;
+}
+.intro{
+    background-image: url("bg.jpg");
+    background-size: 100% 100% ;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    /* padding: 0px 100px; */
+    /* opacity: 80%; */
+
+}
+.margin{
+    margin: 0px 100px;
+}
+div.intro_txt{
+    display: grid;
+    grid-template-areas: 'txt txt img';
+    margin: 20px 0px;
+    background-color: #ffffff75;
+    padding: 20px 10px;
+    color: black;
+    border-radius: 20px;
+}
+.yxy{
+    justify-content: center;
+    margin: auto 20px;
+    grid-area: txt;
+}
+.yxy h1{
+    margin: 10px 0px;
+}
+.yxy h3{
+    margin: 10px 0px ;
+}
+.yxy p{
+    margin: 10px 0px;
+}
+.img{
+    margin: 10px auto;
+    float: right;
+    grid-area: img;
+}
+.img img{
+    height: 200px;
+    width: 200px;
+    border-radius: 200px;
+    margin: auto;
+}
+.skill{
+    display: grid;
+    grid-template-areas: 'head head ' 'skill_txt code ';
+    margin: 20px 0px;
+    background-color: #ffffff75;
+    padding: 20px 10px;
+    color: black;
+    border-radius: 20px;
+    /* border: 5px solid; */
+
+}
+.head{
+    grid-area: head;
+    border-bottom: 5px solid orange;
+    margin-bottom: 20px;
+
+}
+.skill_txt{
+    grid-area: skill_txt;
+    padding: 10px 20px;
+
+}
+.skill_code{
+    grid-area: code;
+}
+.py{
+    width: 360px;
+    margin: 20px auto;
+}
+.py a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.percent{
+    height: 6px;
+    margin: 10px 0px;
+    
+}
+.skill_web{
+    grid-area: web;
+}
+.work{
+    margin: 20px 0px;
+    background-color: #ffffff75;
+    padding: 20px 10px;
+    color: black;
+    border-radius: 20px;
+    /* border: 5px solid; */
+
+}
+.work1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.proj{
+    padding: 10px 20px;
+    /* width: 200px; */
+    background-color: whitesmoke;
+    border: 1px solid black;
+    /* box-shadow: 5px 5px 5px lightgray; */
+    margin: 10px auto;
+    text-align: center;
+    border-radius: 20px;
+}
+.proj h3{
+    margin: 10px 0px;
+}
+.proj img{
+    height: 100px ;
+    width: 150px;
+
+}
+.more{
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    grid-gap: 10px;
+}
+.edu{
+    margin: 20px 0px;
+    background-color: #ffffff75;
+    padding: 20px 10px;
+    color: black;
+    border-radius: 20px;
+}
+.certi{
+    margin: 20px 0px;
+    background-color: #ffffff75;
+    padding: 20px 10px;
+    color: black;
+    border-radius: 20px;
+    height: 300px;
+    text-align: center;
+    overflow-y: scroll;
+}
+.hello{
+    margin: 20px;
+}
+.certi h3{
+    width: fit-content;
+    margin:10px auto;
+    border: 2px solid orange;
+    padding: 5px 10px;
+}
+.certi img{
+    height: 200px;
+    width: 250px;
+
+}
+
+
+@media only screen and (max-width: 1100px){
+    .margin{
+        margin: 0px 10px;
+    }
+}
+@media only screen and (max-width: 750px){
+    .margin{
+        margin: 0px 10px;
+    }
+    .skill{
+        grid-template-areas: 'head' 'skill_txt' 'code';
+    }
+    .skill_txt{
+        margin: 0px auto;
+        text-align: center;
+    }
+    div.intro_txt{
+        grid-template-areas: 'img' 'txt';
+    }
+    .yxy{
+        text-align: center;
+    }
+    .intro{
+        background-size: 100% 100%;
+    }
+    .more{
+        display: block;
+    }
+
+}
+@media only screen and (max-width: 400px){
+    .py{
+        width: auto;
+    }
+}
